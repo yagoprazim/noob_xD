@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+:root{
+/* pseudoclasse - serve pra colocar variáveis */
+    --cor-botao: #FFB800;
+    --cor-botao-foco: #FF900E;
+
+}
+
+*{
+    box-sizing: border-box;  
+    margin: 0;
+    padding: 0;
+    text-decoration: none   ;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+.logo{
+    height: 60px;
+}
+.menu{
+    display: flex;
+    gap: 65px;
+}
