@@ -7,11 +7,18 @@
 
 }
 
-*{
+*{ 
     box-sizing: border-box;  
     margin: 0;
     padding: 0;
     text-decoration: none   ;
+    font-family: 'Roboto', sans-serif;
+    /* trata-se do global, o "*{}" */
+}
+
+body{
+    /* font-family:'Roboto', sans-serif; */
+    font-size: 100%;
 }
 
 .header{
@@ -28,3 +35,54 @@
     display: flex;
     gap: 65px;
 }
+.item-menu{
+font-size: 20px;
+}
+.area-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 2px solid grey;
+    padding: 50px;
+
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.titulo{
+    font-weight: 900;
+    font-size: 48px;
+}
+.botao{
+    height: 109px;
+    width: 419px;
+    background-color:var(--cor-botao);
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    cursor:pointer;
+    transition:all 0.3s ease-in-out;
+    /* estudar a propriedade acima */
+
+}
+.botao:hover{
+    background-color: var(--cor-botao-foco);
+
+}
+
+.rodape{
+    padding: 45px;
+    border-top: 2px solid grey ;
+    text-align: center;
+
+    /* responsividade: vw vh %... */
+}
+
+
